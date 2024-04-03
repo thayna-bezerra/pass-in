@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PassIn.Application/1.0.0": {
+        "dependencies": {
+          "PassIn.Communication": "1.0.0",
+          "PassIn.Exceptions": "1.0.0",
+          "PassIn.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "PassIn.Application.dll": {}
+        }
+      },
+      "PassIn.Communication/1.0.0": {
+        "runtime": {
+          "PassIn.Communication.dll": {}
+        }
+      },
+      "PassIn.Exceptions/1.0.0": {
+        "runtime": {
+          "PassIn.Exceptions.dll": {}
+        }
+      },
+      "PassIn.Infrastructure/1.0.0": {
+        "runtime": {
+          "PassIn.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PassIn.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PassIn.Communication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PassIn.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PassIn.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
