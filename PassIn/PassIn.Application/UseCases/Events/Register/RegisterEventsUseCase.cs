@@ -1,13 +1,33 @@
 ﻿using PassIn.Communication.Requests;
+using PassIn.Communication.Responses;
 using PassIn.Exceptions;
+using PassIn.Infrastructure;
 
 namespace PassIn.Application.UseCases.Events.Register;
 
 public class RegisterEventsUseCase
 {
-    public void Execute(RequestEventJson request) 
+    public ResponseRegisteredEventJson Execute(RequestEventJson request) 
     {
         Validate(request);
+
+        var dbContext = new PassInDbContext();
+
+        var entity = new Infrastructure.Entities.Event //instanciando classe //criando objeto para o evento
+        {
+            Title = request.Title,
+            Details = request.Details,
+            Maximum_Attendees = request.MaximumAttendees,
+            Slug = request.Title.ToLower().Replace(" ", "-"),
+        };
+
+        dbContext.Events.Add(entity); //preparação
+        dbContext.SaveChanges(); //execução
+
+        return new ResponseRegisteredEventJson
+        {
+            Id = entity.Id,
+        };
     }
 
     private void Validate(RequestEventJson request)

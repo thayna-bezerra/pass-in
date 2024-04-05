@@ -10,3 +10,4 @@ C:\Users\User\Documents\GitHub\Sites\pass-in\PassIn\PassIn.Infrastructure\obj\De
 C:\Users\User\Documents\GitHub\Sites\pass-in\PassIn\PassIn.Infrastructure\obj\Debug\net8.0\refint\PassIn.Infrastructure.dll
 C:\Users\User\Documents\GitHub\Sites\pass-in\PassIn\PassIn.Infrastructure\obj\Debug\net8.0\PassIn.Infrastructure.pdb
 C:\Users\User\Documents\GitHub\Sites\pass-in\PassIn\PassIn.Infrastructure\obj\Debug\net8.0\ref\PassIn.Infrastructure.dll
+C:\Users\User\Documents\GitHub\Sites\pass-in\PassIn\PassIn.Infrastructure\obj\Debug\net8.0\PassIn.Infrastructure.csproj.AssemblyReference.cache
