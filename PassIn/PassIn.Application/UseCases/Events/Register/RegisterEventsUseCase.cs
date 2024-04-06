@@ -7,7 +7,7 @@ namespace PassIn.Application.UseCases.Events.Register;
 
 public class RegisterEventsUseCase
 {
-    public ResponseRegisteredEventJson Execute(RequestEventJson request) 
+    public ResponseRegisteredJson Execute(RequestEventJson request) 
     {
         Validate(request);
 
@@ -24,7 +24,7 @@ public class RegisterEventsUseCase
         dbContext.Events.Add(entity); //preparação
         dbContext.SaveChanges(); //execução
 
-        return new ResponseRegisteredEventJson
+        return new ResponseRegisteredJson
         {
             Id = entity.Id,
         };
